@@ -1,0 +1,20 @@
+{
+  "name": "titanbot",
+  "version": "2.1.0-bgbb.1",
+  "description": "TitanBot core, stripped to the BGBB RP staff announcement and logging system.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "check": "node --check src/app.js && node --check src/bgbb/store.js && node --check src/bgbb/permissions.js && node --check src/bgbb/embeds.js && node --check src/bgbb/panel.js && node --check src/bgbb/commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": ">=20.10.0"
+  }
+}
